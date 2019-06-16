@@ -34,4 +34,4 @@ function displayButtons() {
             topics.push(inputbtn);
             console.log(topics);
             console.log(inputbtn);
-        });
+        };
