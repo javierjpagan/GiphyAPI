@@ -20,17 +20,24 @@
     <div class="jumbotron">
         <h1 class="text-center">Giphy API</h1>
         <hr>
-        <div id="buttonsDiv"></div>
-        <div class="input-group">
-                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
-                <div class="input-group-append">
-                    <button id="addCountry" class="btn btn-success" type="button">Add Country</button>
-                </div>
-            </div>
-    </div>
-    <div id="imagesDiv"></div>
 
-    <script src="assets/js/script.js"></script>
+        <div id="buttonsDiv"></div>
+        <form class="input-form">
+            <div class="input-group">
+            <label class="sr-only" for="inlineFormInputName2">Country</label>
+            <input type="text" class="form-control" id="input-country" onkeydown="if (event.keyCode == 13)  document.getElementById('addCountryBtn').click()">
+            <button type="submit" id="addCountryBtn" class="btn btn-success">Add
+                Country</button>
+            </div>
+        </form>
+
+        <div id="topics-view" class="justify-content-around"></div>
+
+
+            </div>
+
+
+    <script src="assets/js/GifTastic.js"></script>
 </body>
 
 </html>
